@@ -1,0 +1,4 @@
+temp_celsius = lambda fa: (5 / 9) * (f - 32)
+
+f = float(input('Digite a temperatura em Fahrenheit:'))
+print(f'A temperatura em Celsius é: {temp_celsius(f):0.2f}')
