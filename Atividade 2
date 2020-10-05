@@ -1,0 +1,15 @@
+time = input('Digite o nome da equipe de futebol: ')
+derrotas = int(input('O {} perdeu quantas partidas? '.format(time)))
+empates = int(input('Quantos empates? '))
+vitórias = int(input('Agora insira o número de vitórias do {} até o momento: '.format(time)))
+
+pontos_ganhos = vitórias * 3 + empates
+pontos_perdidos = derrotas * 3 + empates * 2
+
+partidas = derrotas + empates + vitórias
+aproveitamento = (pontos_ganhos / (pontos_ganhos + pontos_perdidos)) * 100
+
+print()
+print('O {0} disputou {1} jogos'.format(time, partidas))
+print('{0} pontos ganhos e {1} pontos perdidos'.format(pontos_ganhos, pontos_perdidos))
+print('o percentual de aproveitamento do seu time foi', aproveitamento)
